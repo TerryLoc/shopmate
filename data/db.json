@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "id": 10001,
+      "name": "Basics To Advanced In React",
+      "price": 29,
+      "in-stock": true
+    },
+    {
+      "id": 10002,
+      "name": "JavaScript For All",
+      "price": 18.99,
+      "in-stock": true
+    },
+    {
+      "id": 10003,
+      "name": "DJANGO",
+      "price": 40,
+      "in-stock": true
+    },
+    {
+      "id": 10004,
+      "name": "HTML, CSS Frontend Dev Road",
+      "price": 12,
+      "in-stock": false
+    },
+    {
+      "id": 10005,
+      "name": "A Frontend Road Map",
+      "price": 15.95,
+      "in-stock": false
+    }
+  ]
+}

@@ -4,7 +4,7 @@ import Loading from '../assets/snail-loading.png';
 
 export function ProductList() {
   const [url, setUrl] = useState('http://localhost:8000/products');
-  const { data: products, loading } = useFretch(url);
+  const { data: products, loading, error } = useFretch(url);
 
   // // Only when function is outside useEffect
   // const fetchProducts = useCallback(async () => {
@@ -35,6 +35,7 @@ export function ProductList() {
           <img src={Loading} alt="" />
         </p>
       )}
+      {error && <p className="loading">{error}</p>}
 
       {products &&
         products.map((product) => (

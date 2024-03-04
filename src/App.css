@@ -4,9 +4,18 @@
   padding: 0px 15px;
 }
 
+img {
+  height: 100px;
+}
+
 h1 {
   text-align: center;
   margin: 30px auto;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
 }
 
 .heading {
@@ -25,6 +34,7 @@ h1 {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   max-width: 600px;
   border-radius: 5px;
+  background: #e4e1e6;
 }
 
 .card .id {

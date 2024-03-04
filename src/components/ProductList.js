@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useFretch } from '../hooks/useFretch';
-// import Loading from '../assets/snail-loading.png';
+import Loading from '../assets/snail-loading.png';
 
 export function ProductList() {
   const [url, setUrl] = useState('http://localhost:8000/products');
@@ -31,8 +31,8 @@ export function ProductList() {
 
       {loading && (
         <p className="loading">
-          Loading Products...
-          {/* <img src={Loading} alt="" /> */}
+          {/* Loading Products... */}
+          <img src={Loading} alt="" />
         </p>
       )}
 

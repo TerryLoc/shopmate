@@ -9,6 +9,9 @@ export const useFretch = (url) => {
       setLoading(true);
       try {
         const response = await fetch(url);
+        if (!response.ok) {
+          throw new Error(response.statusText);
+        }
         const result = await response.json();
         setLoading(false);
         setData(result);
